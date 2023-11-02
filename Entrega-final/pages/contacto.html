@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/images.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="main-header">
+        <h1>Tu Empresa</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobre-nosotros.html">Sobre noosotros</a></li>
+                <li><a href="./reseñas.html">Reseñas</a></li>
+                <li><a href="./pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <div class="contact-section">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta o comentario, no dudes en enviarnos un mensaje.</p>
+        <form action="tuScriptDeEnvio.php" method="POST">
+            <div class="input-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="cta">Enviar Mensaje</button>
+        </form>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2023 TechStore. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
